@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 
 const UmOkkur = () => {
-  let navigate = useNavigate();
 
   return (
     <section id="um-okkur">
