@@ -1,13 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  @apply lg:text-7xl text-4xl text-white font-bold leading-tight;
+}
+
+h2 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  @apply text-2xl md:text-3xl font-semibold text-maindarkblue;
+}
+
+h3 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  @apply text-xl font-semibold text-maindarkblue;
+}
+
+h4 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  @apply text-lg md:text-xl text-white font-normal;
+}
+
+p {
+  font-family: "Be Vietnam Pro", sans-serif;
+  @apply text-lg font-light text-black leading-relaxed;
+}
+
+input {
+  @apply rounded-xl;
+}
+
+textarea {
+  @apply rounded-xl;
+}
+
+.link {
+  font-family: "Be Vietnam Pro", sans-serif;
+  @apply text-3xl md:text-lg cursor-pointer hover:text-teal duration-300 ease-in-out;
+}
+
+.link-lang {
+  font-family: "Be Vietnam Pro", sans-serif;
+  @apply text-sm lg:text-base uppercase;
+}
+
+.label {
+  @apply text-white;
+}
+
+.nav-service-button {
+  @apply text-3xl md:text-lg bg-teal text-white py-4 px-6 rounded-full hover:bg-darkteal ease-in-out duration-300 !important;
+}
+
+#opening-header {
+  background-image: linear-gradient(to bottom, #0e2635, #113c4e, #0f5467, #0a6d7e, #0c8793, #3699a8, #53abbd, #6dbed2, #9dcce5, #c6daf0, #e7ebf8, #ffffff);
+}
+
+#fyrri-verk-header {
+  background: url("https://res.cloudinary.com/dq2uenf18/image/upload/q_auto,f_auto,fl_lossy/v1678028135/ahverk/solpallar-grindverk/img10_ojng8g.jpg")
+    no-repeat 50%;
+  background-size: cover;
+  margin-left: calc(-50vw + 50%);
+  width: 100vw;
+  @apply h-[35vh] lg:h-[45vh];
+}
+
+.logo-wrapper {
+  text-align: center;
+  margin-bottom: -40px;
+}
+
+.logo {
+  display: inline-block;
+  @apply w-14 mt-1.5 h-auto hover:fill-teal duration-100 ease-in-out;
+}
+
+.footer-logo {
+  display: inline-block;
+  filter: invert(65%) sepia(98%) saturate(334%) hue-rotate(6deg) brightness(89%)
+    contrast(95%);
+  @apply w-24 h-auto duration-100 ease-in-out hover:fill-white;
+}
+
+.footer-logo:hover {
+  filter: brightness(0) invert(1);
+  @apply duration-100 ease-in-out;
+}
+
+.nav-li {
+  display: inline-block;
+  @apply pt-0 px-[20px] lg:px-[30px] pb-[30px];
+}
+
+.half {
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+.right-navlist {
+  padding-left: 70px;
+  @apply pl-[50px] lg:pl-[70px];
+}
+
+.left-navlist {
+  text-align: right;
+  @apply pr-[50px] lg:pr-[70px];
+}
+
+.video-docker video {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-docker::after {
+  content: "";
+  position: absolute;
+  height: 75vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hideMenuNav {
+  /* display: none;
+  @apply left-full transition-all duration-300 ease-in-out */
+
+  display: block;
+  position: absolute;
+  width: 75%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  @apply transition-all duration-300 ease-in-out -left-3/4;
+}
+
+.showMenuNav {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #0E2635;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  @apply transition-all duration-300 ease-in-out left-0 shadow-2xl;
+}
+
+ul.leaders {
+  max-width: 40em;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+  @apply text-sm md:text-xl text-black;
+}
+
+ul.leaders li:after {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . ";
+}
+
+ul.leaders span:first-child {
+  padding-right: 0.33em;
+  background-color: #ffffff;
+}
+ul.leaders span + span {
+  float: right;
+  padding-left: 0.33em;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"] {
+  resize: none;
+   -webkit-appearance: none;
+}
+
+html,body{
+  overflow-x: hidden;
 }
