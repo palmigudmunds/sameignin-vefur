@@ -9,7 +9,7 @@ const Hero = () => {
     >
       <div className="mt-72 xl:max-w-screen-xl space-y-2 flex flex-col justify-start items-start max-w-none md:max-w-screen-xl mx-auto md:max-h-screen space-x-0 px-8">
         <div className="w-full md:w-2/5">
-          <h1 className="text-left">Fagleg og persónuleg húsfélagsþjónusta</h1>
+          <h1 className="text-left leading-none">Fagleg og persónuleg húsfélagsþjónusta</h1>
         </div>
         <div className="pt-3 w-full md:w-2/5">
           <h4 className="text-left">

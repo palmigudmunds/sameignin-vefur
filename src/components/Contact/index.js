@@ -53,7 +53,7 @@ const Contact = () => {
                 Nafn tengiliðs*
               </label>
               <input
-                className="appearance-none bg-gray-50 border-2 border-gray-300 text-gray-900 w-full mb-3 md:mb-0 py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:border-teal"
+                className="appearance-none bg-gray-50 border-2 border-gray-300 text-gray-900 w-full mb-3 md:mb-0 py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"
                 id="form-input-control-last-name"
                 name="user_name"
                 type="text"
@@ -65,7 +65,7 @@ const Contact = () => {
                 Netfang*
               </label>
               <input
-                className="appearance-none bg-gray-50 border-2 border-gray-300 text-gray-900 w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:border-teal"
+                className="appearance-none bg-gray-50 border-2 border-gray-300 text-gray-900 w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"
                 id="form-input-control-email"
                 name="user_email"
                 type="email"
@@ -77,7 +77,7 @@ const Contact = () => {
                 Símanúmer
               </label>
               <input
-                className="appearance-none bg-gray-50 border-2 border-gray-300 text-gray-900 w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:border-teal"
+                className="appearance-none bg-gray-50 border-2 border-gray-300 text-gray-900 w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"
                 id="form-input-control-phone"
                 name="user_phone"
                 type="tel"
@@ -88,7 +88,7 @@ const Contact = () => {
                 Heimilisfang húsfélags*
               </label>
               <input
-                className="appearance-none bg-gray-50 border-2 border-gray-300 text-gray-900 w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:border-teal"
+                className="appearance-none bg-gray-50 border-2 border-gray-300 text-gray-900 w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"
                 id="form-input-control-title"
                 name="user_address"
                 type="text"
@@ -100,7 +100,7 @@ const Contact = () => {
                 Skilaboð
               </label>
               <textarea
-                className="block appearance-none h-full border-2 bg-gray-50 border-gray-300 text-gray-900 w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:border-teal"
+                className="block appearance-none h-full border-2 bg-gray-50 border-gray-300 text-gray-900 w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"
                 id="form-textarea-control-opinion"
                 name="user_message"
                 type="text"
@@ -109,7 +109,7 @@ const Contact = () => {
           </div>
           <div className="mt-12 md:mt-10 flex items-start">
             <button
-              className="bg-teal text-white text-lg md:text-xl py-2 px-10 hover:bg-white hover:text-teal ease-in-out duration-300 rounded-full"
+              className="bg-teal text-white text-lg md:text-xl py-2 px-10 hover:hover:bg-darkteal ease-in-out duration-300 rounded-full"
               type="submit"
             >
               Senda

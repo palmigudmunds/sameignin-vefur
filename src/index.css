@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,49 +7,49 @@
 
 body {
   background: #ffffff;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 h1 {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   @apply lg:text-7xl text-4xl text-white font-bold leading-tight;
 }
 
 h2 {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   @apply text-2xl md:text-3xl font-semibold text-maindarkblue;
 }
 
 h3 {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   @apply text-xl font-semibold text-maindarkblue;
 }
 
 h4 {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   @apply text-lg md:text-xl text-white font-normal;
 }
 
 p {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   @apply text-lg font-light text-black leading-relaxed;
 }
 
 input {
-  @apply rounded-xl;
+  @apply rounded-lg;
 }
 
 textarea {
-  @apply rounded-xl;
+  @apply rounded-lg;
 }
 
 .link {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   @apply text-3xl md:text-lg cursor-pointer hover:text-teal duration-300 ease-in-out;
 }
 
 .link-lang {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   @apply text-sm lg:text-base uppercase;
 }
 
@@ -61,7 +62,7 @@ textarea {
 }
 
 #opening-header {
-  background-image: linear-gradient(to bottom, #0e2635, #113c4e, #0f5467, #0a6d7e, #0c8793, #3699a8, #53abbd, #6dbed2, #9dcce5, #c6daf0, #e7ebf8, #ffffff);
+  background-image: linear-gradient(to bottom, #0e2635, #173a4a, #204f5e, #2b6572, #397c84, #518e98, #68a0ab, #7fb2bf, #a4c3d4, #c8d5e4, #e6e9f2, #ffffff);
 }
 
 #fyrri-verk-header {

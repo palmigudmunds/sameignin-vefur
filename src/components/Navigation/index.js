@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Hamburger from "hamburger-react";
 import { NavLink } from "react-router-dom";
 
-import bigLogo from "../../resources/logo/logo2.png";
+import bigLogo from "../../resources/logo/white.png";
 import smallLogo from "../../resources/logo/logo-small.png";
+
 
 const Navigation = () => {
   // let activeClassName = "text-teal link max-md:hidden";
@@ -84,15 +85,15 @@ const Navigation = () => {
         <div className="logo-wrapper md:hidden">
           <div className="logo">
             <NavLink to={`/`}>
-              <img className="logo" src={smallLogo} alt="Logo" />
+              <img src={smallLogo} alt="Logo" />
             </NavLink>
           </div>
         </div>
       </div>
       <div className="md:max-w-screen-xl flex md:mx-auto justify-center md:py-8 lg:py-10 px-8">
-        <NavLink to={`/`} className="w-64 flex items-center justify-start">
+        <NavLink to={`/`} className="w-52 lg:w-64 flex items-center justify-start">
           <img
-            className="max-md:hidden w-32 md:w-36 lg:w-56 h-auto"
+            className="max-md:hidden w-full h-auto"
             src={bigLogo}
             alt="Logo"
           />
@@ -118,7 +119,7 @@ const Navigation = () => {
             to={`/hafdu-samband`}
             className="nav-service-button max-md:hidden"
           >
-            Fá tilboð í þjónustu
+            Fáðu ókeypis ráðgjöf
           </NavLink>
         </div>
       </div>
