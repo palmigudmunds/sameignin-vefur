@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Hamburger from "hamburger-react";
 import { NavLink } from "react-router-dom";
 
-import bigLogo from "../../resources/logo/white.png";
-import smallLogo from "../../resources/logo/logo-small.png";
+import bigLogo from "../../resources/logo/logo-white-big.png";
+import smallLogo from "../../resources/logo/logo-white-small.png";
 
 
 const Navigation = () => {
@@ -75,7 +75,7 @@ const Navigation = () => {
                 }
                 onClick={() => setIsNavOpen(false)}
               >
-                Fá tilboð í þjónustu
+                Fáðu ókeypis ráðgjöf
               </NavLink>
             </li>
           </ul>

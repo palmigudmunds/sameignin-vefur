@@ -95,6 +95,17 @@ const Contact = () => {
                 required
               />
             </div>
+            <div className="w-full">
+              <label className="label md:mb-2" for="form-input-control-phone">
+                Fjöldi íbúða í húsfélagi
+              </label>
+              <input
+                className="appearance-none bg-gray-50 border-2 border-gray-300 text-gray-900 w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"
+                id="form-input-control-title"
+                name="apartments_count"
+                type="number"
+              />
+            </div>
             <div className="w-full h-24">
               <label className="label md:mb-2" for="message">
                 Skilaboð

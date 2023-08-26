@@ -10,6 +10,10 @@ body {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
+a {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
 h1 {
   font-family: 'Merriweather Sans', sans-serif;
   @apply lg:text-7xl text-4xl text-white font-bold leading-tight;
@@ -61,8 +65,18 @@ textarea {
   @apply text-3xl md:text-lg bg-teal text-white py-4 px-6 rounded-full hover:bg-darkteal ease-in-out duration-300 !important;
 }
 
+.front-service-button {
+  @apply text-xl md:text-lg bg-white text-teal py-4 px-6 rounded-full hover:bg-darkteal hover:text-white ease-in-out duration-300 !important;
+}
+
 #opening-header {
-  background-image: linear-gradient(to bottom, #0e2635, #173a4a, #204f5e, #2b6572, #397c84, #518e98, #68a0ab, #7fb2bf, #a4c3d4, #c8d5e4, #e6e9f2, #ffffff);
+  height: 110vh;
+  background-image: linear-gradient(0deg, rgba(255,255,255,1) 2%, rgba(80,155,155,1) 23%, rgba(14,38,53,1) 83%);
+}
+
+#contact-background {
+  height: 130vh;
+  background-image: linear-gradient(0deg, rgba(255,255,255,1) 2%, rgba(80,155,155,1) 23%, rgba(14,38,53,1) 83%);
 }
 
 #fyrri-verk-header {
@@ -81,7 +95,7 @@ textarea {
 
 .logo {
   display: inline-block;
-  @apply w-14 mt-1.5 h-auto hover:fill-teal duration-100 ease-in-out;
+  @apply w-12 mt-3 h-auto hover:fill-teal duration-100 ease-in-out;
 }
 
 .footer-logo {

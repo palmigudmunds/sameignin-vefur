@@ -8,7 +8,7 @@ const ContactPageView = () => {
   return (
     <>
       <Suspense fallback={<Loading />}>
-        <div id="opening-header" className="space-y-12 md:space-y-32 mb-28 md:mb-0">
+        <div id="contact-background" className="space-y-12 md:space-y-32 md:mb-0 px-8">
           <Container>
             <Contact />
           </Container>
