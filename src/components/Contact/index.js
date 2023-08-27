@@ -42,7 +42,7 @@ const Contact = () => {
         <p className="pt-5 italic md:w-10/12 lg:w-8/12 text-white">
           Nýttu þetta form til að fá tilboð í húsfélagsþjónustu að kostnaðarlausu eða til
           að senda fyrirspurnir. Einnig getur þú sent okkur póst á
-          sameignin@sameignin.is.
+          stigagangurinn@stigagangurinn.is.
         </p>
       </div>
       <div className="flex flex-col justify-start items-start md:w-1/2 pt-5 md:pt-0">

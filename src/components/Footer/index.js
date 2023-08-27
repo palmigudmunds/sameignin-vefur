@@ -31,7 +31,7 @@ const Footer = () => {
             href="https://www.facebook.com/profile.php?id=100095275575314"
             rel="noreferrer"
             target="_blank"
-            class="text-gray-700 transition hover:text-teal"
+            class="text-gray-500 transition hover:text-teal"
           >
             <span class="sr-only">Facebook</span>
 
