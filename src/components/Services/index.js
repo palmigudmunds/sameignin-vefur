@@ -1,40 +1,27 @@
-import React from "react";
+import React, {useEffect} from "react";
+import { NavLink } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { ReactComponent as Gjaldkerinn } from "../../resources/icons/piggy-bank.svg";
 import { ReactComponent as Husvordur } from "../../resources/icons/person-dolly.svg";
 import { ReactComponent as Formadurinn } from "../../resources/icons/user-crown.svg";
 
-
-
 const Services = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <section id="thjonusta">
+    <section id="thjonusta" data-aos="fade-up" data-aos-duration="2600">
       <div className="w-full rounded-xl flex flex-col text-center items-center justify-items-start -mt-10 md:-mt-20">
         <h3 className="text-teal">Þjónusta</h3>
-        <h4 className="text-black text-2xl md:text-5xl font-bold mt-5">
+        <h4 className="text-maindarkblue text-2xl md:text-4xl font-bold mt-5">
           Hvaða pakki hentar húsfélaginu þínu?
         </h4>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-screen-xl w-full px-8 mt-8">
-        <div className="w-full rounded-xl bg-white flex flex-col p-10 border-2 h-fit">
-          <div className="flex items-center">
-            <Husvordur className="mb-px w-10 h-auto mr-5 fill-teal" />
-            <h2>Húsvörðurinn</h2>
-          </div>
-          <p className="mt-5">
-            Húsvörðurinn elskar að dunda sér við það sem þarf að gera í húsinu.
-          </p>
-          <ul className="list-disc space-y-5 p-4">
-            <li>Skiptir um batterí í reykskynjurum á 6 mánaða fresti</li>
-            <li>Skiptir um perur sem springa</li>
-            <li>Sér um samskipti við verktaka sem eru að vinna í húsinu</li>
-            <li>
-              Fer yfir húsið einu sinni á ári og gerir skýrslu um viðhaldsþörf
-              hússins
-            </li>
-            <li>Fer yfir brunavarnir</li>
-          </ul>
-        </div>
-        <div className="w-full rounded-xl bg-white flex flex-col p-10 border-2 h-fit">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-screen-xl w-full mt-8">
+        <div className="w-full rounded-xl bg-white flex flex-col p-10 pb-7 border-2 h-fit">
           <div className="flex items-center">
             <Gjaldkerinn className="mb-px w-10 h-auto mr-5 fill-teal" />
             <h2>Gjaldkerinn</h2>
@@ -53,8 +40,13 @@ const Services = () => {
             <li>Gerð ársreiknings</li>
             <li>Útgáfa húsfélagayfirlýsinga</li>
           </ul>
+          <div className="flex flex-col items-center pt-3">
+            <NavLink to={`/hafdu-samband`} className="front-service-button">
+              Fá tilboð
+            </NavLink>
+          </div>
         </div>
-        <div className="w-full rounded-xl bg-white flex flex-col p-10 border-2 h-fit">
+        <div className="w-full rounded-xl bg-white flex flex-col p-10 pb-7 border-2 h-fit">
           <div className="flex items-center">
             <Formadurinn className="mb-px w-10 h-auto mr-5 fill-teal" />
             <h2>Formaðurinn</h2>
@@ -76,6 +68,35 @@ const Services = () => {
               viðhaldsframkvæmdir
             </li>
           </ul>
+          <div className="flex flex-col items-center pt-3">
+            <NavLink to={`/hafdu-samband`} className="front-service-button">
+              Fá tilboð
+            </NavLink>
+          </div>
+        </div>
+        <div className="w-full rounded-xl bg-white flex flex-col p-10 pb-7 border-2 h-fit">
+          <div className="flex items-center">
+            <Husvordur className="mb-px w-10 h-auto mr-5 fill-teal" />
+            <h2>Húsvörðurinn</h2>
+          </div>
+          <p className="mt-5">
+            Húsvörðurinn elskar að dunda sér við það sem þarf að gera í húsinu.
+          </p>
+          <ul className="list-disc space-y-5 p-4">
+            <li>Skiptir um batterí í reykskynjurum á 6 mánaða fresti</li>
+            <li>Skiptir um perur sem springa</li>
+            <li>Sér um samskipti við verktaka sem eru að vinna í húsinu</li>
+            <li>
+              Fer yfir húsið einu sinni á ári og gerir skýrslu um viðhaldsþörf
+              hússins
+            </li>
+            <li>Fer yfir brunavarnir</li>
+          </ul>
+          <div className="flex flex-col items-center pt-3">
+            <NavLink to={`/hafdu-samband`} className="front-service-button">
+              Fá tilboð
+            </NavLink>
+          </div>
         </div>
       </div>
     </section>

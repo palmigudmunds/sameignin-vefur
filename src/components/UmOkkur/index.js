@@ -1,11 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const UmOkkur = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  
   return (
-    <section id="um-okkur">
-      <div className="w-full h-auto rounded-xl flex flex-col text-center items-center justify-items-start px-8">
+    <section id="um-okkur" data-aos="fade-up" data-aos-duration="2600">
+      <div className="w-full h-auto rounded-xl flex flex-col text-center items-center justify-items-start">
         <h3 className="text-teal">Hvað er stigagangurinn?</h3>
-        <h4 className="text-black text-2xl md:text-5xl font-bold mt-5">Þægilegra húsfélag bíður þín!</h4>
+        <h4 className="text-maindarkblue text-2xl md:text-4xl font-bold mt-5">Reynslumikil áhöfn bíður þín!</h4>
         <p className="w-full md:w-2/3 mt-8">
           Stigagangurinn er nýstofnað fyrirtæki með það hlutverk að einfalda
           rekstur húsfélagsins fyrir íbúa og sameina alla þjónustu sem tengist

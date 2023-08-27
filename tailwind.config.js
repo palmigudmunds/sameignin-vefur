@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        maindarkblue: "#509b9b",
+        maindarkblue: "#0E2635",
         teal: "#509b9b",
-        darkteal: "#187371"
+        darkteal: "#187371",
+        brown: "#9b7250",
+        darkbrown: "#73543b"
       },
     },
     fontFamily: {

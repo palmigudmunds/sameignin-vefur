@@ -24,7 +24,7 @@ function App() {
         const pos = element.style.position;
         const top = element.style.top;
         element.style.position = "relative";
-        element.style.top = "-150px";
+        element.style.top = "-120px";
         if (element) {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
           element.style.top = top;

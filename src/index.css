@@ -16,12 +16,12 @@ a {
 
 h1 {
   font-family: 'Merriweather Sans', sans-serif;
-  @apply lg:text-7xl text-4xl text-white font-bold leading-tight;
+  @apply lg:text-7xl text-4xl max-[360px]:text-2xl text-white font-bold leading-tight;
 }
 
 h2 {
   font-family: 'Merriweather Sans', sans-serif;
-  @apply text-2xl md:text-3xl font-semibold text-maindarkblue;
+  @apply text-2xl md:text-3xl font-semibold text-teal;
 }
 
 h3 {
@@ -62,20 +62,19 @@ textarea {
 }
 
 .nav-service-button {
-  @apply text-3xl md:text-lg bg-teal text-white py-4 px-6 rounded-full hover:bg-darkteal ease-in-out duration-300 !important;
+  @apply text-3xl md:text-lg bg-brown text-white py-4 px-6 rounded-full ease-in-out duration-300 hover:bg-darkbrown !important;
 }
 
 .front-service-button {
-  @apply text-xl md:text-lg bg-white text-teal py-4 px-6 rounded-full hover:bg-darkteal hover:text-white ease-in-out duration-300 !important;
+  @apply text-xl md:text-lg bg-brown text-white py-4 px-6 rounded-full hover:bg-darkbrown ease-in-out duration-300 px-8 !important;
 }
 
 #opening-header {
-  height: 110vh;
+  height: 115vh;
   background-image: linear-gradient(0deg, rgba(255,255,255,1) 2%, rgba(80,155,155,1) 23%, rgba(14,38,53,1) 83%);
 }
 
 #contact-background {
-  height: 130vh;
   background-image: linear-gradient(0deg, rgba(255,255,255,1) 2%, rgba(80,155,155,1) 23%, rgba(14,38,53,1) 83%);
 }
 

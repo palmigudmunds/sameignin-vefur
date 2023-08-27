@@ -7,13 +7,13 @@ const Hero = () => {
       id="opening-header"
       className="relative flex flex-col items-center text-white py-0"
     >
-      <div className="mt-72 xl:max-w-screen-xl space-y-2 flex flex-col justify-start items-start max-w-none md:max-w-screen-xl mx-auto md:max-h-screen space-x-0 px-8 pb-28">
+      <div className="mt-60 md:mt-72 xl:max-w-screen-xl space-y-3 md:space-y-4 flex flex-col justify-start items-start max-w-none md:max-w-screen-xl mx-auto md:max-h-screen space-x-0 px-8 pb-28">
         <div className="w-full md:w-2/5">
           <h1 className="text-left leading-tight md:leading-none">
             Persónuleg og fagleg húsfélagsþjónusta
           </h1>
         </div>
-        <div className="pt-3 w-full md:w-2/5">
+        <div className="w-full md:w-2/5">
           <h4 className="text-left">
             Upplifðu þægindin við að hafa alla þína húsnæðistengdu þjónustu
             undir einu þaki.

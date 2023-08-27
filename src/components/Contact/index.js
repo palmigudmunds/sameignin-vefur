@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <div
       id="hafdu-samband"
-      className="flex flex-col md:flex-row justify-start max-w-none mt-44 md:mt-56 2xl:mt-72 h-[100vh]"
+      className="flex flex-col md:flex-row justify-start max-w-none mt-40 md:mt-48 2xl:mt-62 pb-32"
     >
       <div className="md:w-1/2 flex flex-col items-start md:items-center">
         <h2 className="text-start md:w-10/12 lg:w-8/12 text-white">Hafðu samband!</h2>
@@ -120,7 +120,7 @@ const Contact = () => {
           </div>
           <div className="mt-12 md:mt-10 flex items-start">
             <button
-              className="bg-teal text-white text-lg md:text-xl py-2 px-10 hover:hover:bg-darkteal ease-in-out duration-300 rounded-full"
+              className="bg-brown text-white text-lg md:text-xl py-2 px-10 hover:bg-darkbrown ease-in-out duration-300 rounded-full"
               type="submit"
             >
               Senda
