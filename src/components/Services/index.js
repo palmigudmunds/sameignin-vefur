@@ -83,8 +83,6 @@ const Services = () => {
             Húsvörðurinn elskar að dunda sér við það sem þarf að gera í húsinu.
           </p>
           <ul className="list-disc space-y-5 p-4">
-            <li>Skiptir um batterí í reykskynjurum á 6 mánaða fresti</li>
-            <li>Skiptir um perur sem springa</li>
             <li>Sér um samskipti við verktaka sem eru að vinna í húsinu</li>
             <li>
               Fer yfir húsið einu sinni á ári og gerir skýrslu um viðhaldsþörf
