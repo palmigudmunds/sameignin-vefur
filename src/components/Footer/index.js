@@ -21,7 +21,7 @@ const Footer = () => {
         </p>
         <p class="text-gray-500 text-sm font-normal">
           <a
-            href="mailto:stigagangurinn@stigagangurinn.com"
+            href="mailto:stigagangurinn@stigagangurinn.is"
             className="hover:text-teal"
           >
             stigagangurinn@stigagangurinn.is
