@@ -38,11 +38,13 @@ const Contact = () => {
       className="flex flex-col md:flex-row justify-start max-w-none mt-40 md:mt-48 2xl:mt-62 pb-32"
     >
       <div className="md:w-1/2 flex flex-col items-start md:items-center">
-        <h2 className="text-start md:w-10/12 lg:w-8/12 text-white">Hafðu samband!</h2>
+        <h2 className="text-start md:w-10/12 lg:w-8/12 text-white">
+          Hafðu samband!
+        </h2>
         <p className="pt-5 italic md:w-10/12 lg:w-8/12 text-white">
-          Nýttu þetta form til að fá tilboð í húsfélagsþjónustu að kostnaðarlausu eða til
-          að senda fyrirspurnir. Einnig getur þú sent okkur póst á
-          stigagangurinn@stigagangurinn.is.
+          Nýttu þetta form til að fá tilboð í húsfélagsþjónustu að
+          kostnaðarlausu eða til að senda fyrirspurnir. Einnig getur þú sent
+          okkur póst á stigagangurinn@stigagangurinn.is.
         </p>
       </div>
       <div className="flex flex-col justify-start items-start md:w-1/2 pt-5 md:pt-0">

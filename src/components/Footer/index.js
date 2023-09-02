@@ -5,24 +5,24 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <footer class="bg-white">
-      <div className="flex flex-col md:flex-row items-center justify-between p-7 md:px-20 space-y-5">
+      <div className="flex flex-col lg:flex-row items-center justify-between p-7 md:px-20 space-y-5">
         <div className="w-44">
           <NavLink to={`/`}>
             <img src={logo} alt="Logo" />
           </NavLink>
         </div>
-        <p class="text-sm text-gray-500 font-normal">
+        <p class="text-sm text-gray-400 font-normal">
           &copy; 2023 Allur réttur áskilinn
         </p>
-        <p class="text-gray-500 text-sm font-normal">
-          <a href="tel:+3546926355" className="hover:text-teal">
+        <p class="text-gray-400 text-sm font-normal">
+          <a href="tel:+3546926355" className="hover:text-teal ease-in-out duration-300">
             692-6355
           </a>
         </p>
-        <p class="text-gray-500 text-sm font-normal">
+        <p class="text-gray-400 text-sm font-normal">
           <a
             href="mailto:stigagangurinn@stigagangurinn.is"
-            className="hover:text-teal"
+            className="hover:text-teal ease-in-out duration-300"
           >
             stigagangurinn@stigagangurinn.is
           </a>
@@ -31,7 +31,7 @@ const Footer = () => {
             href="https://www.facebook.com/profile.php?id=100095275575314"
             rel="noreferrer"
             target="_blank"
-            class="text-gray-500 transition hover:text-teal"
+            class="text-gray-400 transition hover:text-teal ease-in-out duration-300"
           >
             <span class="sr-only">Facebook</span>
 
