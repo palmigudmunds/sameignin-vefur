@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getAPI } from "../../services/api";
 import { NavLink } from "react-router-dom";
 
 const Hero = () => {
+  const [heroHeader, setHeroHeader] = useState("");
+
+  useEffect(() => {
+    getAPI(``)
+      .then((resp) => {
+        setHeroHeader(resp.data);
+      })
+  }, []);
+
   return (
     <section
       id="opening-header"
@@ -10,7 +20,7 @@ const Hero = () => {
       <div className="mt-60 md:mt-72 xl:max-w-screen-xl space-y-3 md:space-y-4 flex flex-col justify-start items-start max-w-none md:max-w-screen-xl mx-auto md:max-h-screen space-x-0 px-8 pb-28">
         <div className="w-full md:w-2/5">
           <h1 className="text-left leading-tight md:leading-none">
-            Persónuleg og fagleg húsfélagsþjónusta
+            {heroHeader}
           </h1>
         </div>
         <div className="w-full md:w-2/5">
