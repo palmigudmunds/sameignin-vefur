@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -80,15 +80,42 @@ const Services = () => {
             <h2>Húsvörðurinn</h2>
           </div>
           <p className="mt-5">
-            Húsvörðurinn elskar að dunda sér við það sem þarf að gera í húsinu.
+            Húsvörðurinn elskar að dunda sér við það sem þarf að gera í og við
+            húsið og fer í flest minni verk. Hann kemur eftir samkomulagi, allt
+            frá einu til tvisvar sinnum á ári yfir í daglegar heimsóknir. Allt
+            eftir stærð og þörfum húsfélagsins. Húsvörðurinn er í góðum
+            samskiptum við stjórn húsfélagsins og skilar inn skýrslu eftir
+            hverja heimsókn.
           </p>
           <ul className="list-disc space-y-5 p-4">
-            <li>Sér um samskipti við verktaka sem eru að vinna í húsinu</li>
+            <li>
+              Grunnþjónusta húsfélaga, eftirlit með ljósaperum, neyðarlýsingu,
+              húsbúnaði og umhirðu á lóð og stigagöngum
+            </li>
             <li>
               Fer yfir húsið einu sinni á ári og gerir skýrslu um viðhaldsþörf
               hússins
             </li>
-            <li>Fer yfir brunavarnir</li>
+            <li>
+              Eftirlit með kerfum og búnaði í sameign s.s. snjóbræðsla,
+              sorphirða, ræstingar, aðgangskerfi
+            </li>
+            <li>Álestur sameiginlegra mæla</li>
+            <li>
+              Skiptir um rafhlöður í reykskynjurum á 6 mánaða fresti og yfirfer
+              slökkvitæki
+            </li>
+            <li>
+              Samskipti við verktaka sem eru að vinna í húsinu ef þess er óskað
+            </li>
+            <li>
+              Fer yfir húsið einu sinni á ári og gerir skýrslu um viðhaldsþörf
+              hússins í samstarfi við sérfræðinga, ef þess er óskað
+            </li>
+            <li>Pantar iðnaðarmenn eftir þörfum og samkomulagi</li>
+            <li>
+              Kemur með tillögur og ábendingar um það sem betur mætti fara
+            </li>
           </ul>
           <div className="flex flex-col items-center pt-3">
             <NavLink to={`/hafdu-samband`} className="front-service-button">
